@@ -1,9 +1,9 @@
 import { http } from '@/utils'
-import { Post, Param } from '@/types'
+import { IPost, IParam } from '@/types'
 
 export const getPostsApi = (params: any) => 
   http<{
-    list: Post[],
+    list: IPost[],
     total: number,
     totalAll: number
   }>({
@@ -14,7 +14,7 @@ export const getPostsApi = (params: any) =>
 
 export const getParamsApi = (params: any) => 
   http<{
-    list: Param[],
+    list: IParam[],
     total: number
   }>({ 
     url:'params',
