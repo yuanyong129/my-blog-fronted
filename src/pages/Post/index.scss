@@ -1,0 +1,93 @@
+$post-bg-color: rgba(255,255,255, 1);
+
+[data-component="post"]{
+  padding-top: 30px;
+// backdrop-filter: blur(15px);
+  min-height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 1024px;
+  margin: 0 auto;
+  @media screen and (max-width: 1024px) {
+    padding: 20px;
+    width: 100%;
+  }
+  @media screen and (max-width: 720px) {
+    width: 100%;
+    display: block;
+    padding: 20px;
+  }
+  // background-color: rgba(245,245,245, .72);
+  .infos{
+    width: 35%;
+    @media screen and (max-width: 720px) {
+      width: 100%;
+    }
+    .info{
+      padding: 10px;
+      .info-name{
+        font-size: 24px;
+        text-align: center;
+        font-weight: 700;
+      }
+      .info-number{
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        justify-content: space-around;
+        align-items: center;
+        .divider{
+          height: 30px;
+          width: 1px;
+          background-color: rgb(121, 85, 72);
+        }
+      }
+    }
+    .classify, .tags{
+      margin-top: 20px;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: $post-bg-color;
+      // @media screen and (max-width: 720px) {
+      //   display: none;
+      // }
+      .title{
+        font-size: 18px;
+      }
+    }
+    // .tags{
+    // }
+  }
+  .classify-item{
+    display: inline-block;
+    border-radius: 2px;
+    margin: 5px;
+    background-color: rgba(121, 85, 72, .5);
+    color: rgb(245,245,245);
+    // text-indent: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+    &.active{
+      background-color: chocolate;
+    }
+  }
+  .posts, .no-posts{
+    width: 63%;
+    height: fit-content;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    @media screen and (max-width: 720px) {
+      width: 100%;
+      margin-top: 20px;
+      padding: 0;
+    }
+    
+  }
+  .no-posts{
+    text-align: center;
+    background-color: white;
+  }
+}

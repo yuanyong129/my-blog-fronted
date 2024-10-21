@@ -1,0 +1,12 @@
+[data-component="post-item"]{
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  .p-title{
+    text-indent: 10px;
+    font-size: 26px;
+    color: rgb(84, 84, 84);
+    border-bottom: 1px solid rgb(84, 84, 84);
+  }
+}
