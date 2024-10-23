@@ -1,0 +1,10 @@
+// 响应式布局样式表
+[data-component="post-details"]{ // 博客详情页
+  width: 960px;
+  margin: 20px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  @media screen and (max-width: 1024px) {
+    width: 90%;
+  }
+}
