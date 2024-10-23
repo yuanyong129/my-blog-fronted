@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import CHR from '@/assets/images/avatar.png'
+import CHR from '@/assets/image/avatar.png'
 import './index.scss'
 
 export default (() => {
