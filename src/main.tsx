@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import '@/styles/index.scss';
 import Layout from '@/layout';
 import Post from '@/pages/Post';
@@ -8,7 +8,7 @@ import Home from '@/pages/Home';
 import About from '@/pages/About';
 import PostDetails from '@/pages/Post/PostDetails';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Layout />,
